@@ -70,7 +70,7 @@ int main(int argc, char** argv){
     
     
     diff_t = (double)(stop - start) / CLOCKS_PER_SEC;
-    FILE *out1 = fopen(tiempo,"w");
+    FILE *out1 = fopen(tiempo,"a");
     fprintf(out1,"%f\n",diff_t);
     fclose(out);
     return 0;
